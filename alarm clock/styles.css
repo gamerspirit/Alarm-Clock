@@ -1,0 +1,155 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: wheat;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper img{
+  max-width: 50px;
+}
+
+select {
+  appearance: none;
+  outline: none;
+  background-color: wheat;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  color: #0e141b;
+  border-color: black;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+/* End Global Styles */
+
+.main-container {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(219deg, #139953 0%, #3a8dd5 100%);
+  padding: 2rem;
+}
+
+.clock-container {
+  padding: 2rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  min-height: 30vh;
+  background-color: #9f6d32;
+  border-radius: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.current-time {
+  font-size: 2rem;
+  color: black;
+}
+
+.alarm-form {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.submit-button {
+  border-color: black;
+  border: 10px;
+  border-radius: 2rem;
+  font-weight: bold;
+  background-color: #0e141b;
+  color: white;
+}
+
+.set-alarm-container {
+  width: 100%;
+}
+
+.set-alarm-container .set-alarm-container-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.alarm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  background-color: #0e141b;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.alarm .delete-alarm {
+  border-radius: 2rem;
+  background-color: rgba(230, 13, 13, 0.918);
+  font-weight: bold;
+  color: wheat;
+  font-size: medium;
+}
+
+.time {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn:focus,
+.btn:hover {
+  box-shadow: red 2px 2px 2px 1px inset, #fff -2px -2px 10px 1px inset;
+}
+
+.page-title {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Styles for devices with screen size less than 768px */
+@media only screen and (max-width: 767px) {
+  .clock-container {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 1rem;
+  }
+}
+
+/* Styles for devices with screen size 768px and above */
+@media only screen and (min-width: 768px) {
+  .main-container {
+    padding: 4rem;
+  }
+}
